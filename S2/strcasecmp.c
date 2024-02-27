@@ -1,4 +1,5 @@
-int strcasecmp(const char *s1, const char *s2) {
+int strcasecmp(const char *s1, const char *s2) 
+{
     int i;
     for (i = 0; s1[i] && s2[i]; i++){
         if (s1[i] == s2[i] || (s1[i] ^ 32) == s2[i]) continue;
