@@ -1,10 +1,12 @@
 int result;
 
-void sum1(int a1, int b1) {
+void sum1(int a1, int b1) 
+{
     a1 = a1 + b1;
 }
 
-void main(int argc, char **argv) {
+void main(int argc, char **argv) 
+{
     int a1 = 5, b1 = 6;
 
     sum1(a1, b1);
@@ -21,9 +23,12 @@ void main(int argc, char **argv) {
 }
 
 // Question 2: Global variables
-
-void sum2(int a, int b) {
-
+/*
+* @post stores in the global variable result the sum of the parameters a and b
+*/
+void sum2(int a, int b) 
+{
+    result = a + b
 }
 
 // Question 3: Passing by reference
@@ -31,6 +36,7 @@ void sum2(int a, int b) {
 /*
  * @post stores the sum of the values pointed by a and b in the memory pointed by r
  */
-void sum3 (int *a, int *b, int *r) {
-
+void sum3 (int *a, int *b, int *r) 
+{
+    *r = *a + *b
 }
