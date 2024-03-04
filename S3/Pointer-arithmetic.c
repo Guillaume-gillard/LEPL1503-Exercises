@@ -1,24 +1,20 @@
 // Question 1: First argument 
-/*
-* You found a hint from the hacker, telling the first parameter is located at the 12th byte after ptr. 
-* An int is guaranteed to be 4 bytes long.
-*
-* Write the body of the function first which returns the integer at that position in memory.
-*/
 int first(void *ptr)
 {   
-    int int_ptr = (int *) ptr 
-    return *(ptr + 12);
+    int *int_ptr = ptr + 12;
+    return *int_ptr;
 }
 
 // Question 2: Second argument 
 char second(void *ptr)
 {
-    return *(ptr + 6);
+    char *char_ptr = ptr + 6;
+    return *char_ptr;
 }
 
 // Question 3: Third argument
 int third(void *ptr)
 {
-    return *(ptr + 45)
+    int *int_ptr2 = ptr + 45;
+    return *int_ptr2;
 }
