@@ -10,6 +10,6 @@
 {  
     int file = open(filename,  O_RDONLY);
     if (file == -1) return -1;
-    close(file):
+    close(file);
     return 0;
 }
