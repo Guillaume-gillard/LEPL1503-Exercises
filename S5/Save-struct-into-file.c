@@ -29,7 +29,7 @@ typedef struct point {
 int save(point_t *pt, int size, char *filename)
 {
     int global_size = sizeof(*pt) * size;
-    int file = open(filename, O_CREAT | O_RDWR);
+    int file = open(filename, O_CREAT | O_RDWR, S_IRUSR);
     if (file == -1) return -1;
 
     // Truncate the file to the appropriate size
